@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<link rel="stylesheet" media="all" type="text/css" href="sudokuJS.css">
+		<style>
+			* {
+				margin:0; padding:0;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			.wrap {
+				padding: 2em 1em;
+				width: 400px;
+				max-width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			@media(min-width: 30em){
+				.wrap{
+					width: 490px;
+				}
+				.sudoku-board input {
+					font-size: 24px;
+					font-size: 1.5rem;
+				}
+				.sudoku-board .candidates {
+					font-size: .8em;
+				}
+			}
+
+		</style>
+
+		<title>Sudoku Sidebar</title>
+
+
+		<script type="text/javascript" src="jQuery.js"></script>
+		<script type="text/javascript" src="sudokuJS.js"></script>
+	</head>
+
+	<body>
+	<div class="wrap">
+		<h1>Sudoku Sidebar</h1>
+
+		<!--show candidates toggle-->
+		<label for="toggleCandidates">Show candidates </label><input id="toggleCandidates" class="js-candidate-toggle" type="checkbox"/>
+		<br>
+		New board:
+		<br>
+		<button type="button" class="sudokubutton1 js-generate-board-btn--easy">Easy</button>
+		<button type="button" class="sudokubutton2 js-generate-board-btn--medium">Medium</button>
+		<button type="button" class="sudokubutton3 js-generate-board-btn--hard">Hard</button>
+		<button type="button" class="sudokubutton4 js-generate-board-btn--very-hard">Very Hard</button>
+
+
+		<!--the only required html-->
+		<div id="sudoku" class="sudoku-board">
+		</div>
+
+		<!--solve buttons-->
+		Solve: <button type="button" class="sudokubutton5 js-solve-step-btn">One Step</button><button type="button" class="sudokubutton6 js-solve-all-btn">All</button>
+		<br>
+		<!--clear board btn-->
+		Clear: <button type="button" class="sudokubutton7 js-clear-board-btn">Board</button>
+		<br>Game version: v1.0.1
+	</div>
+
+	<script src="function.js"></script>
+	</body>
+</html>

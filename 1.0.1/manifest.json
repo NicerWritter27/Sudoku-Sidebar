@@ -1,0 +1,34 @@
+{
+    "manifest_version": 2,
+    "name": "Sudoku Sidebar",
+    "version": "1.0.1",
+    "description": "Play Sudoku on Sidebar anytime in your browser! even offline!",
+    "icons": {
+        "128": "icons/128.png",
+        "96": "icons/96.png",
+        "72": "icons/72.png",
+        "64": "icons/64.png",
+        "48": "icons/48.png",
+        "32": "icons/32.png",
+        "16": "icons/16.png"
+    },
+    "sidebar_action": {
+        "default_icon": {
+            "128": "icons/128.png",
+            "96": "icons/96.png",
+            "72": "icons/72.png",
+            "64": "icons/64.png",
+            "48": "icons/48.png",
+            "32": "icons/32.png",
+            "16": "icons/16.png"
+        },
+        "default_panel": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "installed.js"
+        ]
+    },
+    "offline_enabled": true,
+    "options_page": "help.html"
+}
