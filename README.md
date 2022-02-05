@@ -29,3 +29,4 @@ If every cell is filled up, you can make a new game.
 (This is only a screenshot)
 ## Links
 Sudoku sidebar on Opera (coming soon)
+<br>[Official discord sercer](https://github.com/NicerWritter27/Sudoku-Sidebar#sudoku-sidebar)
